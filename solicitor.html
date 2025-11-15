@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana's Law Studies - Solicitor Training</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/solicitor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">J</div>
+                        Juliana
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="solicitor.html" class="active">Law Studies</a>
+                    <a href="music.html">Music</a>
+                    <a href="games.html">Games</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="law-hero">
+                <div class="section-title">
+                    <h2>Juliana's Path to Becoming a Solicitor</h2>
+                    <p>Your complete legal education journey in the UK</p>
+                </div>
+                <div class="progress-tracker">
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span>Foundation</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-book"></i></div>
+                        <span>LLB Degree</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-certificate"></i></div>
+                        <span>SQE Training</span>
+                    </div>
+                    <div class="progress-line"></div>
+                    <div class="progress-item">
+                        <div class="progress-icon"><i class="fas fa-briefcase"></i></div>
+                        <span>Qualified Solicitor</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Tabs -->
+            <div class="study-tabs">
+                <button class="tab-btn active" onclick="showTab('curriculum')">
+                    <i class="fas fa-list"></i> Curriculum
+                </button>
+                <button class="tab-btn" onclick="showTab('resources')">
+                    <i class="fas fa-book-open"></i> Resources
+                </button>
+                <button class="tab-btn" onclick="showTab('practice')">
+                    <i class="fas fa-pen"></i> Practice Tests
+                </button>
+                <button class="tab-btn" onclick="showTab('organizations')">
+                    <i class="fas fa-building"></i> Organizations
+                </button>
+            </div>
+
+            <!-- Curriculum Tab -->
+            <div id="curriculum" class="tab-content active">
+                <div class="curriculum-grid">
+                    <!-- Foundation Year -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-seedling"></i> Foundation Year</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Introduction to Law</h4>
+                                <ul>
+                                    <li>Legal System Overview</li>
+                                    <li>Sources of Law</li>
+                                    <li>Court Structure</li>
+                                    <li>Legal Profession</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Video Lectures
+                                    </a>
+                                    <a href="#" class="resource-link">
+                                        <i class="fas fa-file-pdf"></i> Reading Materials
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>English Legal System</h4>
+                                <ul>
+                                    <li>Constitutional Law Basics</li>
+                                    <li>Administrative Law</li>
+                                    <li>Human Rights</li>
+                                    <li>EU Law Impact</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpEuVR-HjlmhjeNEnBKfyGdD" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Constitutional Law
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LLB Year 1 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-balance-scale"></i> LLB Year 1</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Contract Law</h4>
+                                <ul>
+                                    <li>Formation of Contracts</li>
+                                    <li>Terms and Conditions</li>
+                                    <li>Breach and Remedies</li>
+                                    <li>Misrepresentation</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpF1Ke5KqKwYVfzpbmcCKhOx" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Contract Law Lectures
+                                    </a>
+                                    <iframe src="https://www.lawteacher.net/free-law-essays/contract-law/" class="embedded-resource"></iframe>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Tort Law</h4>
+                                <ul>
+                                    <li>Negligence</li>
+                                    <li>Occupiers' Liability</li>
+                                    <li>Nuisance</li>
+                                    <li>Defamation</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpEF8viEJUstq4byJ-N5q4Wd" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Tort Law Series
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Criminal Law</h4>
+                                <ul>
+                                    <li>Elements of Crime</li>
+                                    <li>Homicide</li>
+                                    <li>Theft and Fraud</li>
+                                    <li>Defenses</li>
+                                </ul>
+                                <div class="module-resources">
+                                    <a href="https://www.youtube.com/playlist?list=PLWPirh4EWFpGjTKFMVpQkp6N1Q7fLCiIX" target="_blank" class="resource-link">
+                                        <i class="fab fa-youtube"></i> Criminal Law
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LLB Year 2 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-gavel"></i> LLB Year 2</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Land Law</h4>
+                                <ul>
+                                    <li>Freehold and Leasehold</li>
+                                    <li>Easements and Covenants</li>
+                                    <li>Mortgages</li>
+                                    <li>Registration</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Equity and Trusts</h4>
+                                <ul>
+                                    <li>Express Trusts</li>
+                                    <li>Resulting Trusts</li>
+                                    <li>Constructive Trusts</li>
+                                    <li>Breach of Trust</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>EU Law</h4>
+                                <ul>
+                                    <li>Institutions</li>
+                                    <li>Direct Effect</li>
+                                    <li>Supremacy</li>
+                                    <li>Free Movement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LLB Year 3 -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-university"></i> LLB Year 3</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>Company Law</h4>
+                                <ul>
+                                    <li>Corporate Personality</li>
+                                    <li>Directors' Duties</li>
+                                    <li>Shareholders' Rights</li>
+                                    <li>Insolvency</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Employment Law</h4>
+                                <ul>
+                                    <li>Contract of Employment</li>
+                                    <li>Unfair Dismissal</li>
+                                    <li>Discrimination</li>
+                                    <li>Trade Unions</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>Family Law</h4>
+                                <ul>
+                                    <li>Marriage and Divorce</li>
+                                    <li>Financial Provision</li>
+                                    <li>Children Act</li>
+                                    <li>Domestic Violence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SQE Preparation -->
+                    <div class="curriculum-section">
+                        <h3><i class="fas fa-certificate"></i> SQE Preparation</h3>
+                        <div class="module-list">
+                            <div class="module">
+                                <h4>SQE1 - Functioning Legal Knowledge</h4>
+                                <ul>
+                                    <li>Business Law and Practice</li>
+                                    <li>Dispute Resolution</li>
+                                    <li>Contract Law</li>
+                                    <li>Tort Law</li>
+                                    <li>Constitutional and Administrative Law</li>
+                                    <li>EU Retained Law</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="module">
+                                <h4>SQE2 - Practical Legal Skills</h4>
+                                <ul>
+                                    <li>Client Interviewing</li>
+                                    <li>Advocacy</li>
+                                    <li>Case and Matter Analysis</li>
+                                    <li>Legal Research</li>
+                                    <li>Legal Writing</li>
+                                    <li>Legal Drafting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources Tab -->
+            <div id="resources" class="tab-content">
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <h3><i class="fas fa-book"></i> Essential Textbooks</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>Contract Law</h4>
+                                <p><strong>Treitel on The Law of Contract</strong> by Edwin Peel</p>
+                                <a href="https://www.amazon.co.uk/Treitel-Law-Contract-Edwin-Peel/dp/0414033647" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>Tort Law</h4>
+                                <p><strong>Winfield & Jolowicz on Tort</strong> by W.V.H. Rogers</p>
+                                <a href="https://www.amazon.co.uk/Winfield-Jolowicz-Tort-W-Rogers/dp/0414033639" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>Criminal Law</h4>
+                                <p><strong>Smith & Hogan's Criminal Law</strong> by David Ormerod</p>
+                                <a href="https://www.amazon.co.uk/Smith-Hogans-Criminal-Law-Cases/dp/0198748841" target="_blank" class="btn btn-sm">Buy on Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3><i class="fab fa-youtube"></i> Video Learning</h3>
+                        <div class="video-grid">
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                <h4>Introduction to UK Legal System</h4>
+                            </div>
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                <h4>Contract Law Fundamentals</h4>
+                            </div>
+                            <div class="video-item">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                <h4>Criminal Law Basics</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3><i class="fas fa-globe"></i> Online Resources</h3>
+                        <div class="link-grid">
+                            <a href="https://www.lawteacher.net/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>LawTeacher.net</h4>
+                                <p>Free law essays and study guides</p>
+                            </a>
+                            <a href="https://www.bailii.org/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-gavel"></i>
+                                <h4>BAILII</h4>
+                                <p>British and Irish Legal Information</p>
+                            </a>
+                            <a href="https://www.legislation.gov.uk/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-scroll"></i>
+                                <h4>Legislation.gov.uk</h4>
+                                <p>UK Legislation Database</p>
+                            </a>
+                            <a href="https://www.sra.org.uk/" target="_blank" class="resource-link-card">
+                                <i class="fas fa-certificate"></i>
+                                <h4>SRA</h4>
+                                <p>Solicitors Regulation Authority</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Tests Tab -->
+            <div id="practice" class="tab-content">
+                <div class="practice-section">
+                    <h3><i class="fas fa-clipboard-check"></i> Test Your Knowledge</h3>
+                    <div class="test-categories">
+                        <div class="difficulty-selector">
+                            <h4>Choose Your Level:</h4>
+                            <div class="difficulty-buttons">
+                                <button class="difficulty-btn" onclick="startQuickTest('beginner')">
+                                    <i class="fas fa-seedling"></i>
+                                    <span>Beginner</span>
+                                    <small>Foundation Level</small>
+                                </button>
+                                <button class="difficulty-btn" onclick="startQuickTest('intermediate')">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Intermediate</span>
+                                    <small>LLB Level</small>
+                                </button>
+                                <button class="difficulty-btn" onclick="startQuickTest('advanced')">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Advanced</span>
+                                    <small>Professional Level</small>
+                                </button>
+                                <button class="difficulty-btn" onclick="startQuickTest('expert')">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Expert</span>
+                                    <small>Solicitor Level</small>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="test-info">
+                            <div class="info-card">
+                                <h5>Quick Test Format</h5>
+                                <ul>
+                                    <li>10 questions per test</li>
+                                    <li>Questions from comprehensive database</li>
+                                    <li>Immediate feedback with explanations</li>
+                                    <li>Progress tracking</li>
+                                    <li>Unlimited retakes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Interface -->
+                <div id="testInterface" class="test-interface hidden">
+                    <div class="test-header">
+                        <h3 id="testTitle">Contract Law Test</h3>
+                        <div class="test-progress">
+                            <span id="questionNumber">1</span> of <span id="totalQuestions">50</span>
+                        </div>
+                        <div class="test-timer">
+                            <i class="fas fa-clock"></i>
+                            <span id="timer">60:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-container">
+                        <div class="question" id="currentQuestion">
+                            Loading question...
+                        </div>
+                        
+                        <div class="answers" id="answerOptions">
+                            <!-- Answer options will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="test-controls">
+                            <button class="btn btn-outline" onclick="previousQuestion()">Previous</button>
+                            <button class="btn" onclick="nextQuestion()">Next</button>
+                            <button class="btn btn-secondary" onclick="submitTest()">Submit Test</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Results -->
+                <div id="testResults" class="test-results hidden">
+                    <div class="results-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Test Complete!</h3>
+                    </div>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="scorePercentage">85%</span>
+                        </div>
+                        <p>You scored <span id="correctAnswers">42</span> out of <span id="totalTestQuestions">50</span></p>
+                    </div>
+                    <div class="performance-breakdown">
+                        <h4>Performance Breakdown</h4>
+                        <div class="breakdown-item">
+                            <span>Correct Answers:</span>
+                            <span id="correctCount">42</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Incorrect Answers:</span>
+                            <span id="incorrectCount">8</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span>Time Taken:</span>
+                            <span id="timeTaken">45:30</span>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="retakeTest()">Retake Test</button>
+                    <button class="btn btn-outline" onclick="backToTests()">Back to Tests</button>
+                </div>
+            </div>
+
+            <!-- Organizations Tab -->
+            <div id="organizations" class="tab-content">
+                <div class="organizations-grid">
+                    <div class="org-category">
+                        <h3><i class="fas fa-university"></i> Universities & Law Schools</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>University of Oxford - Faculty of Law</h4>
+                                <p>One of the world's leading law schools</p>
+                                <a href="https://www.law.ox.ac.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>University of Cambridge - Faculty of Law</h4>
+                                <p>Prestigious law faculty with excellent reputation</p>
+                                <a href="https://www.law.cam.ac.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>London School of Economics - Law Department</h4>
+                                <p>Leading social science university</p>
+                                <a href="https://www.lse.ac.uk/law" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-category">
+                        <h3><i class="fas fa-balance-scale"></i> Professional Bodies</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>Solicitors Regulation Authority (SRA)</h4>
+                                <p>Regulates solicitors in England and Wales</p>
+                                <a href="https://www.sra.org.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>The Law Society</h4>
+                                <p>Professional body for solicitors</p>
+                                <a href="https://www.lawsociety.org.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Bar Standards Board</h4>
+                                <p>Regulates barristers in England and Wales</p>
+                                <a href="https://www.barstandardsboard.org.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="org-category">
+                        <h3><i class="fas fa-briefcase"></i> Training Providers</h3>
+                        <div class="org-list">
+                            <div class="org-item">
+                                <h4>BPP University Law School</h4>
+                                <p>Leading provider of SQE training</p>
+                                <a href="https://www.bpp.com/law-school" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>University of Law</h4>
+                                <p>Specialist provider of legal education</p>
+                                <a href="https://www.law.ac.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                            <div class="org-item">
+                                <h4>Kaplan Law School</h4>
+                                <p>Professional legal training courses</p>
+                                <a href="https://www.kaplanlaw.ac.uk/" target="_blank" class="btn btn-sm">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Your Legal Journey</h3>
+                    <p>Supporting Juliana's dream of becoming an amazing solicitor.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="solicitor.html">Law Studies</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Made with ❤️ for Juliana's Success</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/solicitor.js"></script>
+</body>
+</html>

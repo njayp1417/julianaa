@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana - My Queen, My Love, My Life</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">J</div>
+                        Juliana
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="solicitor.html">Law Studies</a>
+                    <a href="music.html">Music</a>
+                    <a href="games.html">Games</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop>
+                <source src="assets/hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tagline">My Queen</div>
+            <h1>Welcome Juliana</h1>
+            <p>The love of my life, my beautiful queen. This space is created with all my love for you.</p>
+            <div class="hero-buttons">
+                <a href="gallery.html" class="btn">Our Memories</a>
+                <a href="solicitor.html" class="btn btn-secondary">Your Studies</a>
+                <a href="music.html" class="btn btn-outline">Music</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="intro animate">
+                <div class="section-title">
+                    <h2>For My Beautiful Juliana</h2>
+                    <p>Everything you need in one special place</p>
+                </div>
+                <div class="intro-content">
+                    <p>My dearest Juliana, this website is my gift to you - a place where your dreams of becoming a solicitor can flourish, where our beautiful memories live, where music fills your heart, and where you can relax with games. You are my queen, my love, my everything.</p>
+            
+            <div class="special-message">
+                <p><strong>Remember August 11</strong> 💜</p>
+            </div>
+                </div>
+                
+                <!-- Love Quotes Carousel -->
+                <div class="love-quotes-carousel">
+                    <div class="quote-container">
+                        <div class="quote active">
+                            <p>"Juliana, you are the most beautiful woman in the world, and every day I fall deeper in love with you. Your smile is my sunshine, your laugh is my favorite melody."</p>
+                            <span class="quote-author">- Your Forever Love</span>
+                        </div>
+                        <div class="quote">
+                            <p>"Your intelligence amazes me, your kindness inspires me, and your dreams motivate me to be better every day. You are my everything, Juliana."</p>
+                            <span class="quote-author">- Your Devoted Heart</span>
+                        </div>
+                        <div class="quote">
+                            <p>"I promise to support your journey to becoming the most amazing solicitor, to love you unconditionally, and to cherish every moment we share together."</p>
+                            <span class="quote-author">- Your Eternal Partner</span>
+                        </div>
+                    </div>
+                    <div class="quote-dots">
+                        <span class="dot active" onclick="currentQuote(1)"></span>
+                        <span class="dot" onclick="currentQuote(2)"></span>
+                        <span class="dot" onclick="currentQuote(3)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services animate">
+                <div class="section-title">
+                    <h2>Your Special Sections</h2>
+                </div>
+                <div class="cards-container">
+                    <div class="card">
+                        <i class="fas fa-heart card-icon"></i>
+                        <div class="card-content">
+                            <h3>Our Gallery</h3>
+                            <p>Beautiful memories of us together, all our precious moments in one place.</p>
+                            <a href="gallery.html" class="btn">View Memories</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-balance-scale card-icon"></i>
+                        <div class="card-content">
+                            <h3>Law Studies</h3>
+                            <p>Complete curriculum and resources to help you become the amazing solicitor you're meant to be.</p>
+                            <a href="solicitor.html" class="btn">Start Learning</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-music card-icon"></i>
+                        <div class="card-content">
+                            <h3>Music Corner</h3>
+                            <p>Nigerian hits and gospel songs to lift your spirit and make you dance.</p>
+                            <a href="music.html" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-gamepad card-icon"></i>
+                        <div class="card-content">
+                            <h3>Games & Fun</h3>
+                            <p>Mind games and special surprises to keep you entertained.</p>
+                            <a href="games.html" class="btn">Play Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Love Timeline -->
+            <section class="love-timeline animate">
+                <div class="section-title">
+                    <h2>Our Love Story</h2>
+                    <p>Every chapter of our beautiful journey together</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💕</div>
+                        <div class="timeline-content">
+                            <h3>The Day We Met</h3>
+                            <p>The universe conspired to bring us together, and my life changed forever when I first saw your beautiful smile.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💖</div>
+                        <div class="timeline-content">
+                            <h3>Falling in Love</h3>
+                            <p>Every conversation, every laugh, every moment made me fall deeper in love with your incredible soul.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">👑</div>
+                        <div class="timeline-content">
+                            <h3>You Became My Queen</h3>
+                            <p>The day I realized you weren't just my girlfriend, but my queen, my future, my everything.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💍</div>
+                        <div class="timeline-content">
+                            <h3>Our Future Together</h3>
+                            <p>Supporting your dreams, building our life together, and loving you more each day until forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Love Stats -->
+            <section class="love-stats animate">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Days I'll Love You</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Hours I Think of You</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Of My Heart is Yours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Perfect Woman for Me</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Love Message -->
+            <section class="love-message animate">
+                <div class="love-card">
+                    <h2>My Love Letter to You</h2>
+                    <p>Juliana, my beautiful queen, you light up my world every single day. Your dream of becoming a solicitor inspires me, your smile makes my heart skip beats, and your love completes me. This website is just a small token of my endless love for you.</p>
+                    <p>You are not just beautiful on the outside, but your heart, your mind, your soul - everything about you is absolutely perfect. I am the luckiest man alive to call you mine.</p>
+                    <p>May this space help you achieve your dreams and remind you always that you are loved beyond measure, cherished beyond words, and adored beyond imagination.</p>
+                    <div class="signature">Forever and always yours ❤️</div>
+                </div>
+            </section>
+
+            <!-- Moral Booster Section -->
+            <section class="moral-booster animate">
+                <div class="section-title">
+                    <h2>Inspiration for My Queen</h2>
+                    <p>Powerful quotes from successful people to fuel your dreams</p>
+                </div>
+                <div class="inspiration-carousel">
+                    <div class="inspiration-container">
+                        <div class="inspiration-quote active">
+                            <p>"The way to get started is to quit talking and begin doing."</p>
+                            <span class="inspiration-author">- Walt Disney</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                            <span class="inspiration-author">- Winston Churchill</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Believe you can and you're halfway there."</p>
+                            <span class="inspiration-author">- Theodore Roosevelt</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"The future belongs to those who believe in the beauty of their dreams."</p>
+                            <span class="inspiration-author">- Eleanor Roosevelt</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"It is during our darkest moments that we must focus to see the light."</p>
+                            <span class="inspiration-author">- Aristotle</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"You are never too old to set another goal or to dream a new dream."</p>
+                            <span class="inspiration-author">- C.S. Lewis</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"The only impossible journey is the one you never begin."</p>
+                            <span class="inspiration-author">- Tony Robbins</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Success is not how high you have climbed, but how you make a positive difference to the world."</p>
+                            <span class="inspiration-author">- Roy T. Bennett</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Don't be afraid to give yourself everything you've ever wanted in life."</p>
+                            <span class="inspiration-author">- Oprah Winfrey</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"The only person you are destined to become is the person you decide to be."</p>
+                            <span class="inspiration-author">- Ralph Waldo Emerson</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Your limitation—it's only your imagination."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Great things never come from comfort zones."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Dream it. Wish it. Do it."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Success doesn't just find you. You have to go out and get it."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"The harder you work for something, the greater you'll feel when you achieve it."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Don't stop when you're tired. Stop when you're done."</p>
+                            <span class="inspiration-author">- Marilyn Monroe</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Wake up with determination. Go to bed with satisfaction."</p>
+                            <span class="inspiration-author">- George Lorimer</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Do something today that your future self will thank you for."</p>
+                            <span class="inspiration-author">- Sean Patrick Flanery</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"Little things make big days."</p>
+                            <span class="inspiration-author">- Isabel Marant</span>
+                        </div>
+                        <div class="inspiration-quote">
+                            <p>"It's going to be hard, but hard does not mean impossible."</p>
+                            <span class="inspiration-author">- Anonymous</span>
+                        </div>
+                    </div>
+                    <div class="inspiration-controls">
+                        <button class="inspiration-btn" onclick="previousInspiration()"><i class="fas fa-chevron-left"></i></button>
+                        <button class="inspiration-btn" onclick="nextInspiration()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reasons I Love You -->
+            <section class="reasons-love animate">
+                <div class="section-title">
+                    <h2>Reasons I Love You</h2>
+                    <p>Just a few of the infinite reasons why you're perfect</p>
+                </div>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <i class="fas fa-smile"></i>
+                        <h3>Your Beautiful Smile</h3>
+                        <p>Your smile lights up every room and makes my heart skip a beat every single time.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Your Brilliant Mind</h3>
+                        <p>Your intelligence and determination to become a solicitor inspire me every day.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Your Kind Heart</h3>
+                        <p>Your compassion and kindness make you the most beautiful person inside and out.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Your Unique Spirit</h3>
+                        <p>Everything about you is special, unique, and absolutely perfect in every way.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-laugh"></i>
+                        <h3>Your Amazing Laugh</h3>
+                        <p>Your laughter is my favorite sound in the world and brings joy to my soul.</p>
+                    </div>
+                    <div class="reason-card">
+                        <i class="fas fa-crown"></i>
+                        <h3>Your Royal Grace</h3>
+                        <p>You carry yourself like the queen you are, with elegance and confidence.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>For Juliana</h3>
+                    <p>Made with endless love for the queen of my heart.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="solicitor.html">Law Studies</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Made with ❤️ for Julian</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>

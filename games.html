@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana's Game Corner</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">J</div>
+                        Juliana
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="solicitor.html">Law Studies</a>
+                    <a href="music.html">Music</a>
+                    <a href="games.html" class="active">Games</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="games-hero">
+                <div class="section-title">
+                    <h2>Juliana's Game Corner</h2>
+                    <p>Mind-cracking games and special surprises for my beautiful queen</p>
+                </div>
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-brain"></i>
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Mind Games</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Love Games</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-fire"></i>
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Spicy Games</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Categories -->
+            <div class="game-categories">
+                <div class="category-card" onclick="showCategory('mind-games')">
+                    <i class="fas fa-brain"></i>
+                    <h3>Mind Games</h3>
+                    <p>Challenge your brilliant mind</p>
+                </div>
+                <div class="category-card" onclick="showCategory('love-games')">
+                    <i class="fas fa-heart"></i>
+                    <h3>Love Games</h3>
+                    <p>Games about us and our love</p>
+                </div>
+                <div class="category-card" onclick="showCategory('spicy-games')">
+                    <i class="fas fa-fire"></i>
+                    <h3>Spicy Corner</h3>
+                    <p>For my naughty queen 😈</p>
+                </div>
+            </div>
+
+            <!-- Mind Games Section -->
+            <div id="mind-games" class="game-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-brain"></i> Mind-Cracking Games</h3>
+                    <p>Exercise that beautiful brain of yours, my genius Julian</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Memory Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-memory"></i> Memory Master</h4>
+                            <div class="difficulty">Medium</div>
+                        </div>
+                        <p>Test your memory with this challenging card matching game</p>
+                        <button class="btn" onclick="startMemoryGame()">Play Now</button>
+                    </div>
+
+                    <!-- Puzzle Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-puzzle-piece"></i> Number Puzzle</h4>
+                            <div class="difficulty">Hard</div>
+                        </div>
+                        <p>Solve complex number sequences and patterns</p>
+                        <button class="btn" onclick="startPuzzleGame()">Play Now</button>
+                    </div>
+
+                    <!-- Word Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-spell-check"></i> Word Wizard</h4>
+                            <div class="difficulty">Medium</div>
+                        </div>
+                        <p>Create words from letters and expand your vocabulary</p>
+                        <button class="btn" onclick="startWordGame()">Play Now</button>
+                    </div>
+
+                    <!-- Logic Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-chess"></i> Logic Master</h4>
+                            <div class="difficulty">Expert</div>
+                        </div>
+                        <p>Solve complex logical puzzles and riddles</p>
+                        <button class="btn" onclick="startLogicGame()">Play Now</button>
+                    </div>
+
+                    <!-- Math Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-calculator"></i> Math Genius</h4>
+                            <div class="difficulty">Hard</div>
+                        </div>
+                        <p>Quick math challenges to sharpen your skills</p>
+                        <button class="btn" onclick="startMathGame()">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love Games Section -->
+            <div id="love-games" class="game-section hidden">
+                <div class="section-header">
+                    <h3><i class="fas fa-heart"></i> Love Games</h3>
+                    <p>Games about our beautiful love story</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Love Quiz -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-question-circle"></i> How Well Do You Know Me?</h4>
+                            <div class="difficulty">Fun</div>
+                        </div>
+                        <p>Test how well you know your loving partner</p>
+                        <button class="btn" onclick="startLoveQuiz()">Play Now</button>
+                    </div>
+
+                    <!-- Love Messages -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-envelope-heart"></i> Love Message Generator</h4>
+                            <div class="difficulty">Sweet</div>
+                        </div>
+                        <p>Generate beautiful love messages for any occasion</p>
+                        <button class="btn" onclick="startLoveMessages()">Play Now</button>
+                    </div>
+
+                    <!-- Future Plans -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h4><i class="fas fa-calendar-heart"></i> Our Future Together</h4>
+                            <div class="difficulty">Romantic</div>
+                        </div>
+                        <p>Plan our beautiful future together</p>
+                        <button class="btn" onclick="startFuturePlans()">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spicy Games Section -->
+            <div id="spicy-games" class="game-section hidden">
+                <div class="section-header">
+                    <h3><i class="fas fa-fire"></i> Spicy Corner</h3>
+                    <p>For my naughty and beautiful Julian 😈💜</p>
+                </div>
+                
+                <div class="spicy-warning">
+                    <div class="warning-content">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Adults Only Content</h4>
+                        <p>This section contains mature content designed for adults in loving relationships.</p>
+                        <button class="btn" onclick="enterSpicySection()">I'm Ready 😈</button>
+                    </div>
+                </div>
+
+                <div id="spicy-content" class="spicy-content hidden">
+                    <div class="games-grid">
+                        <!-- Intimate Quiz -->
+                        <div class="game-card spicy-card">
+                            <div class="game-header">
+                                <h4><i class="fas fa-fire"></i> Intimate Connection</h4>
+                                <div class="difficulty spicy">Spicy</div>
+                            </div>
+                            <p>Deepen our intimate connection with fun questions</p>
+                            <button class="btn btn-spicy" onclick="startIntimateQuiz()">Play Now</button>
+                        </div>
+
+                        <!-- Romantic Challenges -->
+                        <div class="game-card spicy-card">
+                            <div class="game-header">
+                                <h4><i class="fas fa-heart-pulse"></i> Romantic Challenges</h4>
+                                <div class="difficulty spicy">Hot</div>
+                            </div>
+                            <p>Fun and romantic challenges for couples</p>
+                            <button class="btn btn-spicy" onclick="startRomanticChallenges()">Play Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Interface -->
+            <div id="gameInterface" class="game-interface hidden">
+                <div class="game-container">
+                    <div class="game-header-bar">
+                        <h3 id="gameTitle">Game Title</h3>
+                        <div class="game-controls">
+                            <span id="gameScore">Score: 0</span>
+                            <span id="gameTimer">Time: 0:00</span>
+                            <button class="btn btn-outline" onclick="closeGame()">Close</button>
+                        </div>
+                    </div>
+                    
+                    <div id="gameContent" class="game-content">
+                        <!-- Game content will be loaded here -->
+                    </div>
+                    
+                    <div class="game-footer">
+                        <button class="btn" onclick="restartGame()">Restart</button>
+                        <button class="btn btn-secondary" onclick="nextLevel()">Next Level</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love Message Display -->
+            <div id="loveMessageModal" class="love-message-modal hidden">
+                <div class="love-message-content">
+                    <div class="message-header">
+                        <h3><i class="fas fa-heart"></i> A Message for Julian</h3>
+                        <button class="close-btn" onclick="closeLoveMessage()">&times;</button>
+                    </div>
+                    <div class="message-body">
+                        <div class="message-text" id="loveMessageText">
+                            <!-- Love message will appear here -->
+                        </div>
+                        <div class="message-signature">
+                            With all my love ❤️
+                        </div>
+                    </div>
+                    <div class="message-footer">
+                        <button class="btn" onclick="generateNewMessage()">Another Message</button>
+                        <button class="btn btn-outline" onclick="closeLoveMessage()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Games for My Queen</h3>
+                    <p>Every game here is designed to bring joy to your beautiful heart, Juliana.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="solicitor.html">Law Studies</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="games.html">Games</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Made with ❤️ for Juliana</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/games.js"></script>
+</body>
+</html>
